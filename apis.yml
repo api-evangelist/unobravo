@@ -1,9 +1,26 @@
 aid: unobravo
 name: Unobravo
-description: 'Unobravo is a company surfaced as a portfolio company of insight-partners, northzone and
-  added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Unobravo is Europe''s largest online psychology service, founded in 2019
+  by psychologist Danila De Stefano. It matches people with one of 9,500+ individually
+  vetted psychologists and psychotherapists for individual, couples, and group therapy
+  delivered online, serving Italy, Spain, and France as well as Italians abroad, with
+  500,000+ people supported across more than 10 million online sessions, plus a B2B
+  mental-wellbeing offering (Unobravo Business) and an ECM training academy. Backed
+  by Insight Partners and Northzone. Its backend API (api.unobravo.com) is private,
+  with no public developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/unobravo/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/83919141?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +28,22 @@ x-backed-by:
 - northzone
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Mental Health
+- Psychology
+- Telehealth
+- Online Therapy
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +53,27 @@ maintainers:
 common:
 - type: Website
   url: https://www.unobravo.com/
+- type: Blog
+  url: https://www.unobravo.com/blog
+- type: Pricing
+  url: https://www.unobravo.com/come-funziona-e-prezzi
+- type: Support
+  url: https://www.unobravo.com/faq
+- type: TermsOfService
+  url: https://www.unobravo.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.unobravo.com/privacy-policy
+- type: SignUp
+  url: https://app.unobravo.com/signup
+- type: Login
+  url: https://app.unobravo.com/login
+- type: GitHubOrganization
+  url: https://github.com/unobravo
+- type: Packages
+  url: packages/unobravo-packages.yml
+- type: WellKnown
+  url: well-known/unobravo-well-known.yml
+- type: LLMsTxt
+  url: llms/unobravo-llms.txt
+- type: DomainSecurity
+  url: security/unobravo-domain-security.yml

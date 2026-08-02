@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of unobravo.com hosts
+notes: No well-known API/AI/security metadata is published. All probes returned 404;
+  absence recorded as valid data. robots.txt is present on both hosts (not archived).
+hosts:
+- host: www.unobravo.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+- host: unobravo.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+- host: api.unobravo.com
+  notes: Private backend API (AWS API Gateway); every path probed returned 403 ForbiddenException,
+    including /, /openapi.json, /swagger.json, /docs, /graphql, /v1, /health, /.well-known/security.txt.
+  probes:
+  - path: /
+    status: 403
+  - path: /.well-known/security.txt
+    status: 403

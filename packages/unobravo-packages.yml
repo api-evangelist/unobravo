@@ -1,0 +1,53 @@
+generated: '2026-07-21'
+method: searched
+source: registry.npmjs.org, pypi.org, rubygems.org, packagist.org, crates.io, azuresearch-usnc.nuget.org, api.github.com/orgs/unobravo
+notes: Unobravo publishes no API client SDKs. The only first-party package is an
+  internal-infrastructure Pulumi provider fork published under the @unobravo npm
+  scope. PyPI, RubyGems, Packagist, crates.io, and NuGet all returned zero results
+  for "unobravo". The GitHub org has 2 public repos, both Pulumi infrastructure
+  forks (pulumi-awsx, pulumi-mysql) - no client libraries.
+packages:
+- name: '@unobravo/pulumi-mysql'
+  registry: npm
+  url: https://www.npmjs.com/package/@unobravo/pulumi-mysql
+  repository: https://github.com/unobravo/pulumi-mysql
+  latest_version: 0.1.1
+  language: typescript
+  official: true
+  purpose: infrastructure
+  description: A Pulumi package for creating and managing MySQL cloud resources
+    (first-party fork under the Unobravo npm scope; not an API client SDK).
+- name: github.com/unobravo/pulumi-mysql/provider
+  registry: pkg.go.dev
+  url: https://pkg.go.dev/github.com/unobravo/pulumi-mysql/provider
+  repository: https://github.com/unobravo/pulumi-mysql
+  language: go
+  official: true
+  purpose: infrastructure
+  description: Go module of the same first-party Pulumi MySQL provider fork (infrastructure
+    tooling, not an API client SDK).
+registries_searched:
+- registry: npm
+  query: unobravo
+  results: 1
+- registry: pypi
+  query: unobravo
+  results: 0
+- registry: rubygems
+  query: unobravo
+  results: 0
+- registry: packagist
+  query: unobravo
+  results: 0
+- registry: crates.io
+  query: unobravo
+  results: 0
+- registry: nuget
+  query: unobravo
+  results: 0
+- registry: maven-central
+  query: unobravo
+  results: 0
+- registry: pkg.go.dev
+  query: unobravo
+  results: 1
