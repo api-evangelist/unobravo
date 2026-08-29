@@ -9,6 +9,17 @@ description: 'Unobravo is Europe''s largest online psychology service, founded i
   by Insight Partners and Northzone. Its backend API (api.unobravo.com) is private,
   with no public developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/unobravo/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
